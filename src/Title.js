@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Title() {
-  return <h1>اكاديمية حسوب</h1>;
+export default function Title({ title }) {
+  return <h1>{title}</h1>;
 }

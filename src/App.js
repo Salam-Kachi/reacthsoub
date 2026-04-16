@@ -5,8 +5,8 @@ import Text from "./Text";
 function App() {
   return (
     <div className="App">
-      <Title />
-      <Text />
+      <Title title="اكاديمية حسوب" />
+      <Text text="مرحبا بكم في أكاديمية حسوب" />
     </div>
   );
 }
