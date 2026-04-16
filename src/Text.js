@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Text({ text, children }) {
+export default function Text({ text="موسوعة حسوب", children }) {
   return (
     <div>
       <h2>{text}</h2>
