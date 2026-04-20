@@ -27,3 +27,7 @@ button {
   font-weight: inherit;
   border-radius: 5px;
 }
+.products {
+  list-style: none;
+  padding: 0;
+}

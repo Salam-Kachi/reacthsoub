@@ -33,6 +33,15 @@ function getScreenType() {
 function App() {
   const [online, setOnline] = useState(true);
   const [screenType, setScreenType] = useState(getScreenType());
+  const hsoubproducts = [
+    "صور",
+    "مستقل",
+    "خمسات",
+    "أكاديمية حسوب",
+    "بعيد",
+    "إعلاانات حسوب",
+  ];
+  const products = hsoubproducts.map((product) => <li key={product}>{product}</li>);
 
   useEffect(() => {
     const handleResize = () => setScreenType(getScreenType());
@@ -49,6 +58,7 @@ function App() {
       {screenType === "tablet" && <Tablet />}
       {screenType === "laptop" && <Laptop />}
       {screenType === "desktop" && <Desktop />}
+      <ul className="products">{products}</ul>
     </div>
   );
 }
