@@ -40,8 +40,9 @@ function App() {
     "أكاديمية حسوب",
     "بعيد",
     "إعلاانات حسوب",
+    "صور"
   ];
-  const products = hsoubproducts.map((product) => <li key={product}>{product}</li>);
+  const products = hsoubproducts.map((product,index) => <li key={index}>{product}</li>);
 
   useEffect(() => {
     const handleResize = () => setScreenType(getScreenType());
